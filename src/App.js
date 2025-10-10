@@ -32,6 +32,7 @@ import PodcastID3TagEditor from './components/audio-music-tools/PodcastID3TagEdi
 import SongKeyDetector from './components/audio-music-tools/SongKeyDetector';
 import SpeechToText from './components/audio-music-tools/SpeechToText';
 import TextToSpeech from './components/audio-music-tools/TextToSpeech';
+import AudioNormalizer from './components/audio-music-tools/AudioNormalizer';
 // Image Tools
 import AiImageUpscaler from './components/image-tools/AiImageUpscaler';
 import AvatarGenerator from './components/image-tools/AvatarGenerator';
@@ -61,8 +62,94 @@ import PdfUnlock from './components/pdf-document-tools/PdfUnlock';
 import PdfWatermarkAdder from './components/pdf-document-tools/PdfWatermarkAdder';
 import ScanToPdf from './components/pdf-document-tools/ScanToPdf';
 import WordTOPdf from './components/pdf-document-tools/WordTOPdf';
+//Footer
 import { Footer } from './components/Footer';
-
+//Design color and branding
+import ColorContrastChecker from './components/deisgn-color-branding/ColorContrastChecker';
+import FaviconGenerator from './components/deisgn-color-branding/FaviconGenerator';
+import FontPairingSuggester from './components/deisgn-color-branding/FontPairingSuggester';
+import GradientCssGenerator from './components/deisgn-color-branding/GradientCssGenerator';
+import LogoMaker from './components/deisgn-color-branding/LogoMaker';
+import MockupGenerator from './components/deisgn-color-branding/MockupGenerator';
+//Misc-Fun-Niche
+import BarcodeGenerator from './components/misc-fun-niche/BarcodeGenerator';
+import CountdownTimer from './components/misc-fun-niche/CountdownTimer';
+import DailyQuoteWidget from './components/misc-fun-niche/DailyQuoteWidget';
+import EmojiCounter from './components/misc-fun-niche/EmojiCounter';
+import FakeNameGenerator from './components/misc-fun-niche/FakeNameGenerator';
+import IpCameraSnapFetcher from './components/misc-fun-niche/IpCameraSnapFetcher';
+import RandomPwdGenerator from './components/misc-fun-niche/RandomPwdGenerator';
+import UsernameGenerator from './components/misc-fun-niche/UsernameGenerator';
+import WeatherWidget from './components/misc-fun-niche/WeatherWidget';
+//Finance conversion calculator
+import AgeCalculator from './components/finance-conversion-calculators/AgeCalculator';
+import BmiCalculator from './components/finance-conversion-calculators/BmiCalculator';
+import CurrencyConverter from './components/finance-conversion-calculators/CurrencyConverter';
+import DateDiffCalculator from './components/finance-conversion-calculators/DateDiffCalculator';
+import LoanCalculator from './components/finance-conversion-calculators/LoanCalculator';
+import ProfitMarginCalculator from './components/finance-conversion-calculators/ProfitMarginCalculator';
+import TipAndSplitBill from './components/finance-conversion-calculators/TipAndSplitBill';
+import UnitConverter from './components/finance-conversion-calculators/UnitConverter';
+import VatGstCalculator from './components/finance-conversion-calculators/VatGstCalculator';
+// Networking online Tools
+import InternetSpeedChecker from './components/networking-online-tools/InternetSpeedChecker';
+import IpAddressLookup from './components/networking-online-tools/IpAddressLookup';
+import PingTracerouteTool from './components/networking-online-tools/PingTracerouteTool';
+import PortScanner from './components/networking-online-tools/PortScanner';
+import ProxyCheceker from './components/networking-online-tools/ProxyCheceker';
+import SubnetCalculator from './components/networking-online-tools/SubnetCalculator';
+import WhoisReverseIp from './components/networking-online-tools/WhoisReverseIp';
+// Productivity dev tools
+import Base64EncoderAndDecoder from './components/productivity-dev-tools/Base64EncoderAndDecoder';
+import ColorPicker from './components/productivity-dev-tools/ColorPicker';
+import CronExpressionGenerator from './components/productivity-dev-tools/CronExpressionGenerator';
+import CssJsMinifier from './components/productivity-dev-tools/CssJsMinifier';
+import JsonFormatter from './components/productivity-dev-tools/JsonFormatter';
+import QrGenerator from './components/productivity-dev-tools/QrGenerator';
+import RegexTester from './components/productivity-dev-tools/RegexTester';
+import TimezoneConverter from './components/productivity-dev-tools/TimezoneConverter';
+import UrlShortener from './components/productivity-dev-tools/UrlShortener';
+import UuidGenerator from './components/productivity-dev-tools/UuidGenerator';
+import XmlAndHtmlBeautifier from './components/productivity-dev-tools/XmlAndHtmlBeautifier';
+// Security and privacy
+import DataLeakChecker from './components/security-privacy-tools/DataLeakChecker';
+import HashGenerator from './components/security-privacy-tools/HashGenerator';
+import PwdStrengthChecker from './components/security-privacy-tools/PwdStrengthChecker';
+import TextEncryptDecrypt from './components/security-privacy-tools/TextEncryptDecrypt';
+import TwoFactorGenerator from './components/security-privacy-tools/TwoFactorGenerator';
+import VpnProxyExplainer from './components/security-privacy-tools/VpnProxyExplainer';
+// SEO website tools
+import BacklinkPreview from './components/seo-website-tools/BacklinkPreview';
+import BrokenLinkChecker from './components/seo-website-tools/BrokenLinkChecker';
+import DnsLookup from './components/seo-website-tools/DnsLookup';
+import DomainAgeChecker from './components/seo-website-tools/DomainAgeChecker';
+import MetaTagExtractor from './components/seo-website-tools/MetaTagExtractor';
+import { ResponsivenessTester } from './components/seo-website-tools/ResponsivenessTester';
+import RobotsTextAndSitemapGenerator from './components/seo-website-tools/RobotsTextAndSitemapGenerator';
+import SeoSiteAudit from './components/seo-website-tools/SeoSiteAudit';
+import SslCertificateChecker from './components/seo-website-tools/SslCertificateChecker';
+import WebsiteSpeedTest from './components/seo-website-tools/WebsiteSpeedTest';
+import WhoisLookupTool from './components/seo-website-tools/WhoisLookupTool';
+// Social media profile tools 
+import HashtagGenerator from './components/social-media-profile-tools/HashtagGenerator';
+import InstaUsernameAvailabilityChecker from './components/social-media-profile-tools/InstaUsernameAvailabilityChecker';
+import LinkedInAnalyzer from './components/social-media-profile-tools/LinkedInAnalyzer';
+import SocialMediaPostScheduler from './components/social-media-profile-tools/SocialMediaPostScheduler';
+import SocialPostPreviewer from './components/social-media-profile-tools/SocialPostPreviewer';
+import TiktokTrendFinder from './components/social-media-profile-tools/TiktokTrendFinder';
+import TwitterHandleAvailabilityChecker from './components/social-media-profile-tools/TwitterHandleAvailabilityChecker';
+import YoutubeTagAndKeywordExtractor from './components/social-media-profile-tools/YoutubeTagAndKeywordExtractor';
+// Text writing tools
+import DuplicateContentHighlighter from './components/text-writing-tools/DuplicateContentHighlighter';
+import GrammerSpellChecker from './components/text-writing-tools/GrammerSpellChecker';
+import { LoremIpsumGenerator } from './components/text-writing-tools/LoremIpsumGenerator';
+import MarkdownToHtmlConverter from './components/text-writing-tools/MarkdownToHtmlConverter';
+import MetaDescGenerator from './components/text-writing-tools/MetaDescGenerator';
+import PlagiarismChecker from './components/text-writing-tools/PlagiarismChecker';
+import ReadabilityScoreAnalyzer from './components/text-writing-tools/ReadabilityScoreAnalyzer';
+import TextSummarizer from './components/text-writing-tools/TextSummarizer';
+import TitleHeadlineGenerator from './components/text-writing-tools/TitleHeadlineGenerator';
+import WordCharacterCounter from './components/text-writing-tools/WordCharacterCounter';
 
 
 function App() {
@@ -106,6 +193,7 @@ function App() {
           <Route path="/songKeyDetector" element={<SongKeyDetector />} />
           <Route path="/speechToTextr" element={<SpeechToText />} />
           <Route path="/textToSpeech" element={<TextToSpeech />} />
+          <Route path="/audioNormalizer" element={<AudioNormalizer />} />
           {/* Image Tools */}
           <Route path="/aiImageUpscaler" element={<AiImageUpscaler />} />
           <Route path="/avatarGenerator" element={<AvatarGenerator />} />
@@ -135,6 +223,92 @@ function App() {
           <Route path="/pdfWatermarkAdder" element={<PdfWatermarkAdder />} />
           <Route path="/scanToPdf" element={<ScanToPdf />} />
           <Route path="/wordTOPdf" element={<WordTOPdf />} />
+          {/* Design Color And Branding */}
+          <Route path="/colorContrast" element={<ColorContrastChecker />} />
+          <Route path="/faviconGenerator" element={<FaviconGenerator />} />
+          <Route path="/fontPairingSuggester" element={<FontPairingSuggester />} />
+          <Route path="/gradientCssGenerator" element={<GradientCssGenerator />} />
+          <Route path="/logoMaker" element={<LogoMaker />} />
+          <Route path="/mockupGenerator" element={<MockupGenerator />} />
+          {/* Misc-Fun-Niche */}
+          <Route path="/barcodeGenerator" element={<BarcodeGenerator />} />
+          <Route path="/countdownTimer" element={<CountdownTimer />} />
+          <Route path="/dailyQuoteWidget" element={<DailyQuoteWidget />} />
+          <Route path="/emojiCounter" element={<EmojiCounter />} />
+          <Route path="/fakeNameGenerator" element={<FakeNameGenerator />} />
+          <Route path="/ipCameraSnapFetcher" element={<IpCameraSnapFetcher />} />
+          <Route path="/randomPwdGenerator" element={<RandomPwdGenerator />} />
+          <Route path="/usernameGenerator" element={<UsernameGenerator />} />
+          <Route path="/weatherWidget" element={<WeatherWidget />} />
+          {/* Finance Conversion calculator */}
+          <Route path="/ageCalculator" element={<AgeCalculator />} />
+          <Route path="/bmiCalculator" element={<BmiCalculator />} />
+          <Route path="/currencyConverter" element={<CurrencyConverter />} />
+          <Route path="/dateDiffCalculator" element={<DateDiffCalculator />} />
+          <Route path="/loanCalculator" element={<LoanCalculator />} />
+          <Route path="/profitMarginCalculator" element={<ProfitMarginCalculator />} />
+          <Route path="/tipAndSplitBill" element={<TipAndSplitBill />} />
+          <Route path="/unitConverter" element={<UnitConverter />} />
+          <Route path="/vatGstCalculator" element={<VatGstCalculator />} />
+          {/* Networking online Tools */}
+          <Route path="/internetSpeedChecker" element={<InternetSpeedChecker />} />
+          <Route path="/ipAddressLookup" element={<IpAddressLookup />} />
+          <Route path="/pingTracerouteTool" element={<PingTracerouteTool />} />
+          <Route path="/portScanner" element={<PortScanner />} />
+          <Route path="/proxyChecker" element={<ProxyCheceker />} />
+          <Route path="/subnetCalculator" element={<SubnetCalculator />} />
+          <Route path="/whoisReverseIp" element={<WhoisReverseIp />} />
+          {/* Productivity dev tools */}
+          <Route path="/base64EncoderDecoder" element={<Base64EncoderAndDecoder />} />
+          <Route path="/colorPicker" element={<ColorPicker />} />
+          <Route path="/cronExpressionGenerator" element={<CronExpressionGenerator />} />
+          <Route path="/cssjsMinifier" element={<CssJsMinifier />} />
+          <Route path="/jsonFormatter" element={<JsonFormatter />} />
+          <Route path="/qrGenerator" element={<QrGenerator />} />
+          <Route path="/regexTester" element={<RegexTester />} />
+          <Route path="/timezoneConverter" element={<TimezoneConverter />} />
+          <Route path="/urlShortener" element={<UrlShortener />} />
+          <Route path="/uuidGenerator" element={<UuidGenerator />} />
+          <Route path="/xmlAndHtmlBeautifier" element={<XmlAndHtmlBeautifier />} />
+          {/* Security and privacy */}
+          <Route path="/dataLeakChecker" element={<DataLeakChecker />} />
+          <Route path="/hashGenerator" element={<HashGenerator />} />
+          <Route path="/pwdStrengthChecker" element={<PwdStrengthChecker />} />
+          <Route path="/textEncryptDecrypt" element={<TextEncryptDecrypt />} />
+          <Route path="/twoFactorGenerator" element={<TwoFactorGenerator />} />
+          <Route path="/vpnProxyExplainer" element={<VpnProxyExplainer />} />
+          {/* SEO website tools */}
+          <Route path="/backlinkPreview" element={<BacklinkPreview />} />
+          <Route path="/brokenLinkChecker" element={<BrokenLinkChecker />} />
+          <Route path="/dnsLookup" element={<DnsLookup />} />
+          <Route path="/domainAgeChecker" element={<DomainAgeChecker />} />
+          <Route path="/metTagExtractor" element={<MetaTagExtractor />} />
+          <Route path="/responsivenessTester" element={<ResponsivenessTester />} />
+          <Route path="/robotsTextAndSitemap" element={<RobotsTextAndSitemapGenerator />} />
+          <Route path="/seoSiteAudit" element={<SeoSiteAudit />} />
+          <Route path="/sslCertificateChecker" element={<SslCertificateChecker />} />
+          <Route path="/websiteSpeedTest" element={<WebsiteSpeedTest />} />
+          <Route path="/whoisLookup" element={<WhoisLookupTool />} />
+          {/* Social media profile tools */}
+          <Route path="/hashtagGenerator" element={<HashtagGenerator />} />
+          <Route path="/instUsernameChecker" element={<InstaUsernameAvailabilityChecker />} />
+          <Route path="/linkedinAnalyzer" element={<LinkedInAnalyzer />} />
+          <Route path="/socialMediaScheduler" element={<SocialMediaPostScheduler />} />
+          <Route path="/socialPostPreviewer" element={<SocialPostPreviewer />} />
+          <Route path="/tiktokTrendFinder" element={<TiktokTrendFinder />} />
+          <Route path="/twitteHandleChecker" element={<TwitterHandleAvailabilityChecker />} />
+          <Route path="/youtubeKeywordExtractor" element={<YoutubeTagAndKeywordExtractor />} />
+          {/* Text writing tools */}
+          <Route path="/duplicateContentHighlighter" element={<DuplicateContentHighlighter />} />
+          <Route path="/grammerSpellChecker" element={<GrammerSpellChecker />} />
+          <Route path="/loremIpsumGenerator" element={<LoremIpsumGenerator />} />
+          <Route path="/markdownToHtml" element={<MarkdownToHtmlConverter />} />
+          <Route path="/metaDescGenerator" element={<MetaDescGenerator />} />
+          <Route path="/plagiarismChecker" element={<PlagiarismChecker />} />
+          <Route path="/readabilityScoreAnalyzer" element={<ReadabilityScoreAnalyzer />} />
+          <Route path="/textSummarizer" element={<TextSummarizer />} />
+          <Route path="/titleHeadlineGenerator" element={<TitleHeadlineGenerator />} />
+          <Route path="/wordCharacterCounter" element={<WordCharacterCounter />} />
         </Routes>
         <Footer />
       </div>
