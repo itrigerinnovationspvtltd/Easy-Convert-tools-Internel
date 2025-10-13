@@ -104,15 +104,7 @@ const Nav = () => {
                 )}
               </div>
             ))}
-          </div>
-
-          {/* Login Button */}
-          <div>
-            <button className="bg-blue-400 hover:bg-blue-500 py-1 px-3 rounded-lg">
-              Log In
-            </button>
-          </div>
-          
+          </div>          
         </div>
       </div>
     </nav>
