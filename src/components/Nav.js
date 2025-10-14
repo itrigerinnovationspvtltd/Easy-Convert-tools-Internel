@@ -59,6 +59,30 @@ const Nav = () => {
         { title: "Readability Score Analyzer", link: "#" },
       ],
     },
+    {
+      name: "Social Media Tools",
+      submenu: [
+        { title: "Instagram Username Availability check", link: "#" },
+        { title: "Twitter handle availability Check", link: "#" },
+        { title: "Social Media post scheduler", link: "#" },
+        { title: "Hastag Generator", link: "#" },
+        { title: "Social post previewer", link: "#" },
+        { title: "LinkedIn Profile analyzer", link: "#" },
+        { title: "Tiktok trend finder", link: "#" },
+        { title: "Youtube tag & keyword extractor", link: "#" },
+      ],
+    },
+    {
+      name: "Security & Privacy",
+      submenu: [
+        { title: "Password Strength Checker", link: "#" },
+        { title: "Hash Generator", link: "#" },
+        { title: "Text encrypt/Decrypt", link: "#" },
+        { title: "Two-factor code generator", link: "#" },
+        { title: "DAta leak checker", link: "#" },
+        { title: "VPN vs Proxy explainer", link: "#" },
+      ],
+    },
   ];
 
   return (
@@ -76,10 +100,12 @@ const Nav = () => {
           {/* Nav Items */}
           <div className="hidden sm:flex space-x-6">
             
-            {menuItems.map((item, index) => (
+            {menuItems.map((item, index) => {
+              const isHiddenOnMd = index >= Math.ceil(menuItems.length / 2);
+              return (
               <div
                 key={index}
-                className="relative"
+                className={`relative ${isHiddenOnMd ? "hidden md:hidden lg:block" : ""}`}
                 onMouseEnter={() => setOpenMenu(index)}
                 onMouseLeave={() => setOpenMenu(null)}
               >
@@ -89,7 +115,7 @@ const Nav = () => {
 
                 {/* Mega Menu */}
                 {openMenu === index && (
-                  <div className="absolute left-0  top-full w-[500px] bg-white text-gray-800 shadow-2xl border rounded-2xl p-6 grid grid-cols-2 gap-4 z-50">
+                  <div className={`absolute ${ index >= menuItems.length -2 ? "right-0" : "left-0"}  top-full w-[500px]  bg-white text-gray-800 shadow-2xl border rounded-2xl p-6 grid grid-cols-2 gap-4 z-50`}>
                     {item.submenu.map((sub, subIndex) => (
                       <Link
                         key={subIndex}
@@ -103,7 +129,7 @@ const Nav = () => {
                   </div>
                 )}
               </div>
-            ))}
+            )})}
           </div>          
         </div>
       </div>
