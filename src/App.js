@@ -207,7 +207,7 @@ function App() {
           <Route path="/imageToWebp" element={<ImageToWebP />} />
           <Route path="/jpegToPng" element={<JpegToPng />} />
           <Route path="/memeGenerator" element={<MemeGenerator />} />
-          <Route path="/pngToJpg" element={<PngToJpg />} />
+          <Route path="/png-jpg-converter" element={<PngToJpg />} />
           <Route path="/pngTransparentBackground" element={<PngTransparentBackgroundRemover />} />
           <Route path="/profilePhotoDown" element={<ProfilePhotoDown />} />
           <Route path="/watermarkRemover" element={<WatermarkRemover />} />

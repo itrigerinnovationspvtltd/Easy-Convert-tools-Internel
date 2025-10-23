@@ -2,7 +2,7 @@ import React from 'react'
 
 const SpeechToText = () => {
   return (
-    <div>
+    <div className="py-32">
       <h3>/Speech To Text</h3>
     </div>
   )

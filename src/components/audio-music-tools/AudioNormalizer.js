@@ -2,7 +2,7 @@ import React from 'react'
 
 const AudioNormalizer = () => {
   return (
-    <div>
+    <div className="py-32">
       Audio normalizer
     </div>
   )

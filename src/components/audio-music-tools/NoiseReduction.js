@@ -2,7 +2,7 @@ import React from 'react'
 
 const NoiseReduction = () => {
   return (
-    <div>
+    <div className="py-32">
       <h3>Noise Reduction</h3>
     </div>
   )

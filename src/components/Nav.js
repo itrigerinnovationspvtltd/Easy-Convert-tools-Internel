@@ -22,7 +22,7 @@ const Nav = () => {
       submenu: [
         { title: "Image Compressor", link: "/imageCompressor" },
         { title: "JPEG to PNG", link: "/jpegToPng" },
-        { title: "PNG to JPG", link: "/PngToJpg" },
+        { title: "PNG to JPG", link: "/png-jpg-converter" },
         { title: "PNG transparent background remover", link: "/pngTransparentBackground" },
         { title: "Background Blur", link: "/backgroundBlur" },
         { title: "Image resizer", link: "/imageResizer" },
@@ -88,7 +88,7 @@ const Nav = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Link to="/">

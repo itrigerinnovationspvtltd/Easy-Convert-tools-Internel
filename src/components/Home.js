@@ -4,19 +4,33 @@ import { motion } from "framer-motion";
 
 const converters = [
   { title: "PDF Compressor", desc: "Easily Compress PDF files.", icon: "📄", link: "/pdfCompressor" },
-  { title: "Word to PDF", desc: "Convert Word files to professional, shareable PDFs.", icon: "📝", link: "/wordToPdf" },
+  { title: "Word to PDF", desc: "Convert Word files to professional, shareable PDFs.", icon: "📚", link: "/wordToPdf" },
   { title: "PDF to Word", desc: "Convert PDF files to Editable Documents.", icon: "📄", link: "/pdfToWord" },
   { title: "Merge Pdf", desc: "Combine multiple PDF files into one seamless document.", icon: "📚", link: "/pdfMerge" },
+  { title: "Split Pdf", desc: "Split PDF file into multiple document.", icon: "📖", link: "/pdfMerge" },
+  { title: "Pdf Watermark Adder", desc: "Easily add custom text or image watermarks to your PDF files.", icon: "🧾", link: "/pdfWatermarkAdder" },
   { title: "Image Compressor", desc: "Reduce image size without losing quality.", icon: "📸", link: "/imageCompressor" },
   { title: "JPEG to PNG", desc: "Convert JPEG to PNG", icon: "🖼️", link: "/jpegToPng" },
+  { title: "PNG to JPG", desc: "Convert PNG to JPG", icon: "🎥", link: "/png-jpg-converter" },
+  { title: "Image Resizer", desc: "Resize image size without losing quality.", icon: "📸", link: "/imageResizer" },
+  { title: "Image Background Blur", desc: "Instantly blur the background of your images to highlight the main subject", icon: "🖼️", link: "/backgroundBlur" },
+  { title: "PNG transparent background remover", desc: "Quickly remove or make the background of your PNG images", icon: "📸", link: "/pngTransparentBackground" },
   { title: "YouTube to MP3", desc: "Extract high-quality MP3 audio from YouTube videos.", icon: "🎧", link: "/youtubeToMp3" },
   { title: "YouTube to MP4", desc: "Convert YouTube Videos to MP4 in just one click.", icon: "🎬", link: "/YoutubeToMp4" },
-  { title: "Image Resizer", desc: "Resize Your Image in a fast and secure way", icon: "📸", link: "/imageResizer" },
+  { title: "YouTube playlist downloader", desc: "Download your favorite playlist in  one click.", icon: "🎦", link: "/youtubePlaylist" },
+  { title: "Facebook Video downloader", desc: "Download your FAcebook Video in  one click.", icon: "📺", link: "/fbVideoDown" },
+  { title: "TikTok downloader", desc: "Download your TikTok Reel in  one click.", icon: "🎧", link: "/tiktokDown" },
+  { title: "Instagram reel downloader", desc: "Download your instagram reel in  one click.", icon: "🎞", link: "//instaReelDown" },
   { title: "Audio Trimmer", desc: "Quickly trim audio", icon: "🔉", link: "/audioTrimmer" },
+  { title: "Audio Joiner", desc: "Quickly Join audio", icon: "🔊", link: "/audioJoiner" },
+  { title: "Audio Normalizer", desc: "Quickly Normalize audio", icon: "🗣", link: "/audioNormalizer" },
   { title: "Text to Speech", desc: "Quickly convert text into speech", icon: "🔠", link: "/textToSpeech" },
+  { title: "Podcast ID3 Tag Editor", desc: "Start editing your podcast ID3 Tags", icon: "🎙", link: "/podcastID3TagEditor" },
   { title: "Audio Format Converter", desc: "Convert your audio format instantly", icon: "🎧", link: "/audioFormatConverter" },
   { title: "Grammar & Spell Checker", desc: "Check your grammar and spelling", icon: "🎓📝", link: "/grammerAndSpellCheck" },
   { title: "Word & Character Counter", desc: "Count words and characters easily", icon: "🆎", link: "/wordAndCharacter" },
+  { title: "Readability Score Analyzer", desc: "Analyze your Readability score", icon: "💯🔤", link: "/readabilityScoreAnalyzer" },
+  { title: "Plagiarism Checker", desc: "Instantly detect copied text and ensure originality.", icon: "🎓📝", link: "/plagiarismChecker" },
 ];
 
 const Home = () => {
@@ -24,7 +38,7 @@ const Home = () => {
 
   return (
     
-    <div className="bg-gray-50 min-h-screen overflow-x-hidden pt-16">
+    <div className="bg-gray-50 min-h-screen overflow-x-hidden pt-20">
       
       {/* Hero Section */}
       <section className="text-center py-20 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white relative">
