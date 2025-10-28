@@ -150,6 +150,7 @@ import ReadabilityScoreAnalyzer from './components/text-writing-tools/Readabilit
 import TextSummarizer from './components/text-writing-tools/TextSummarizer';
 import TitleHeadlineGenerator from './components/text-writing-tools/TitleHeadlineGenerator';
 import WordCharacterCounter from './components/text-writing-tools/WordCharacterCounter';
+import Convert from './components/Convert';
 
 
 function App() {
@@ -163,6 +164,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/convert" element={<Convert />} />
           {/* Media Converter and Downloaders */}
           <Route path="/youtubeTomp3" element={<YoutubeToMP3 />} />
           <Route path="/youtubeTomp4" element={<YouTubeToMP4 />} />

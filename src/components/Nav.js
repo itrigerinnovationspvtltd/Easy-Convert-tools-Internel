@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import logo from "../assets/Easy-convert-logo.svg";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Nav = () => {
   const [openMenu, setOpenMenu] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const menuItems = [
     {
@@ -131,8 +133,51 @@ const Nav = () => {
               </div>
             )})}
           </div>          
+          {/* Mobile Hamburger */}
+          <div className="sm:hidden">
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="text-gray-700 focus:outline-none"
+            >
+              {mobileOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+            </button>
+          </div>
         </div>
-      </div>
+      </div>{/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="sm:hidden bg-white border-t shadow-md">
+          <div className="flex flex-col p-4 space-y-3">
+            <Link
+              to="/about"
+              onClick={() => setMobileOpen(false)}
+              className="text-gray-800 hover:text-blue-500 font-medium"
+            >
+              About
+            </Link>
+            <Link
+              to="/pdfToWord"
+              onClick={() => setMobileOpen(false)}
+              className="text-gray-800 hover:text-blue-500"
+            >
+              PDF to Word
+            </Link>
+            <Link
+              to="/png-jpg-converter"
+              onClick={() => setMobileOpen(false)}
+              className="text-gray-800 hover:text-blue-500"
+            >
+              PNG to JPG
+            </Link>
+            <Link
+              to="/youtubeTomp3"
+              onClick={() => setMobileOpen(false)}
+              className="text-gray-800 hover:text-blue-500"
+            >
+              YouTube to MP3
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

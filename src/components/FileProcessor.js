@@ -13,6 +13,14 @@ function FileUploader({
   const [convertedFile, setConvertedFile] = useState(null); 
   const dropRef = useRef(null); // Added for drag-and-drop events
 
+  // Added for Convert Now button
+  const [message, setMessange]= useState("");
+  
+      const handleClick = async ()=> {
+          const res = await fetch('http://localhost:5000/run-python');
+          const data = await res.json();
+          setMessange(data.result);
+      }
 
   const handleFileChange = (input) => {
     let selectedFile;
@@ -89,6 +97,16 @@ function FileUploader({
           >
             Drag & Drop your {fileTypeLabel} here
           </div>
+
+          <div className="pt-24 text-center">
+     <button
+      onClick={handleClick}
+        className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+      >
+        Convert Now
+      </button>
+      <p className="mt-4">{message}</p>
+    </div>
 
         </div>
       )}
