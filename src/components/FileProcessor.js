@@ -2,8 +2,8 @@ import React, { useState, useRef } from "react";
 
 function FileUploader({
   title = "Select File",
-  inputAccept = "image/*", // Only images
-  downloadButtonText = "Download File",
+  inputAccept = "image/png",// Only images
+  downloadButtonText = "Download png",
   fileTypeLabel = "image",
 }) {
   const [file, setFile] = useState(null);
@@ -68,13 +68,15 @@ function FileUploader({
     }
   };
 
-  const handleDownload = () => {
-    if (!convertedFileURL) return;
-    const a = document.createElement("a");
-    a.href = convertedFileURL;
-    a.download = `converted_${file.name.replace(/\.[^/.]+$/, "")}.jpg`;
-    a.click();
-  };
+ const handleDownload = () => {
+  if (!convertedFileURL) return;
+  const a = document.createElement("a");
+  a.href = convertedFileURL;
+  a.download = `converted_${file.name.replace(/\.[^/.]+$/, "")}.jpeg`;
+  a.click();
+};
+
+
 
   return (
     <div className="py-8 text-center">

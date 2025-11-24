@@ -28,6 +28,7 @@ const TrustedSection = () => {
           EasyConvert Tools is your reliable companion for fast and secure file
           conversion. Designed to simplify your workflow while keeping your data
           private and protected.
+          
         </motion.p>
 
         {/* Icons / badges */}
